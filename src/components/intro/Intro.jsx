@@ -2,6 +2,8 @@ import React from 'react'
 import './intro.scss'
 import { init} from 'ityped'
 import { useEffect, useRef } from 'react'
+import frew from '../images/frew.jpg'
+import Arrow from '../images/ar.png'
 
 export default function Intro() {
     
@@ -18,10 +20,10 @@ export default function Intro() {
         );
     },[])
     return (
-        <div className='intro' id='intro'>
+        <div className='intro scroll-area' id='intro'>
             <div className="left">
-                <div className="imagecontainer">
-                    <img src="assets/nobac.png" alt="" />
+                <div className='imagecontainer'>
+                   <img className='frew' src={frew} alt='' />
                 </div>
             </div>
             <div className="right">
@@ -30,8 +32,8 @@ export default function Intro() {
                     <h1>Frew Befekadu</h1>
                     <h3>Freelance <span ref={textRef}></span></h3>
                 </div>
-                <a href="#portfolio">
-                     <img src="assets/ar.png" alt="" />
+                <a className='arrlink' href="#about">
+                     <img className='arrblink' src={Arrow} alt="" />
                 </a>
             </div>
         </div>

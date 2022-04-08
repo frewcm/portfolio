@@ -1,59 +1,23 @@
 import React from 'react'
-import { useEffect, useState } from 'react'
-import PortfolioList from '../portfolioList/PortfolioList'
+import { PortfolioList } from './PortfolioList'
+import PortfolioItem from './PortfolioItem'
 import './portfolio.scss'
+import {Fade} from 'react-reveal'
 
-export default function Portfolio() {
-    const [selected, setSelected] = useState('featured')
-    const list = [
-        {id: 'featured',
-         title: 'Featured'},
-         {id: 'web',
-         title: 'web App'},
-         {id: 'mobile',
-         title: 'Mobile App'},
-         {id: 'design',
-         title: 'Design'},
-         {id: 'content',
-         title: 'Content'}
-    ]
+
+const Portfolio = () => { 
     return (
-        <div className='portfolio' id='portfolio'>
-            <h1>Portfolio</h1>
-            <ul>
-                {list.map(item=>(
-                    <PortfolioList title={item.title} active={selected===item.id} setSelected={setSelected} id={item.id}/>
-                )
-
-             )}
-            </ul>
-            <div className="container">
-                <div className="item">
-                    <img src="assets/unknown.png" alt="" />
-                    <h3>unknown app1</h3>
-                </div>
-                <div className="item">
-                    <img src="assets/unknown.png" alt="" />
-                    <h3>unknown app1</h3>
-                </div>
-                <div className="item">
-                    <img src="assets/unknown.png" alt="" />
-                    <h3>unknown app1</h3>
-                </div>
-                <div className="item">
-                    <img src="assets/unknown.png" alt="" />
-                    <h3>unknown app1</h3>
-                </div>
-                <div className="item">
-                    <img src="assets/unknown.png" alt="" />
-                    <h3>unknown app1</h3>
-                </div>
-                <div className="item">
-                    <img src="assets/unknown.png" alt="" />
-                    <h3>unknown app1</h3>
-                </div>
-            </div>
-           
+        <div  className='contact scroll-area' id='portfolio'>
+          <Fade bottom>
+          <h1>Some Projects</h1>
+          <div className='cardcontainer'>
+                {PortfolioList.map((project, index)=>{
+                  return <PortfolioItem key={index} image={project.image} title={project.title} />
+                })}
+          </div> 
+          </Fade>  
         </div>
-    )
-}
+           )
+  }
+
+  export default Portfolio

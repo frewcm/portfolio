@@ -1,0 +1,140 @@
+.about{
+    height: 668px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #EAE7DC;
+}
+.about .p{
+    font-size: 15px;
+    font-family: cursive;
+    color: #E85A4F;
+    margin-top: 100px;
+}
+.about h1{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #8E8D8A;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.aboutContainer{
+    display: flex;
+    width: 100%;
+    height: 400px;
+    margin-left:150px;
+    
+    margin-top: 30px;
+    
+}
+.leftabout{
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 200px;
+    margin-left:30px;
+    
+}
+.leftabout h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.leftabout .aboutdiscription{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+.rightabout{
+   flex: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    
+  
+}
+.rightabout .skillcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+}
+.rightabout .skills{
+    background-color: #8E8D8A;
+    margin: 5px;
+    padding: 3px;
+    font-size: 15px;
+}
+.rightabout .h3skill{
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+@media (max-width: 1100px){
+    .about{
+        height: 600px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #EAE7DC;
+    }
+    .rightabout .skillcontainer{
+        display: flex;
+        flex-wrap: wrap;
+        width: 200px;
+    }
+    .leftabout .aboutdiscription{
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        margin-bottom: 15px;
+        
+    }
+    .about h1{
+        font-size: 27px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #8E8D8A;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .leftabout{
+        flex: 50%;
+        display: flex;
+        flex-direction: column;
+        margin-right: 100px;
+        margin-left: 0px;
+        
+    }
+}
+@media(max-width: 750px){
+    
+    .rightabout .skillcontainer{
+        display: flex;
+        flex-wrap: wrap;
+        width: 150px;
+    }
+    .leftabout .aboutdiscription{
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        margin-bottom: 13px;
+        
+    }
+    .leftabout{
+        flex: 50%;
+        display: flex;
+        flex-direction: column;
+        margin-right: 55px;
+        margin-left: 0px;
+        
+    }
+    .about h1{
+        font-size: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #8E8D8A;
+        margin-top: 8px;
+        margin-bottom: 17px;
+    }
+}
