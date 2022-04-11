@@ -5,7 +5,7 @@ import {Fade} from 'react-reveal'
 function About() {
   return (
     
-    <div className='about scroll-area'id='#about'>
+    <div className='about scroll-area'id='about'>
       <Fade bottom>
       <p className='p'>more</p>
       <h1>About me</h1>

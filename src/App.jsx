@@ -13,8 +13,6 @@ import Collector from './Collector'
 function App() {
   return (
     <Router>
-      
-     
     <Routes>
       <Route path='/' element={<Collector />} />
       <Route path='/mesob' element={<Mesob slides={SliderImage} />} />

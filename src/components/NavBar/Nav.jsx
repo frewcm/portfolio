@@ -7,8 +7,6 @@ import ReorderIcon from '@mui/icons-material/Reorder';
 
 export default function Topbar() {
     const [showLinks, setShowlinks] = useState(false)
-
-    
     return (
         <div className='nav'>
          <div className='left'>
